@@ -1,0 +1,15 @@
+Administrative Distance is a metric used in computer networking to determine the trustworthiness of information received from various routing protocols when multiple routes to the same destination exist.
+it helps routers decide which routing information to use when they receive routing updates from different sources.in general the lower the administrative distance the more trustworthy and preferred the routing information is
+
+
+Directly Connected/LOCAL  (0):	This is the most trusted source of routing information. When a router knows that a route is directly connected, it sets the administrative distance to 0.
+Static Route (1): 	Static routes are manually configured by network administrators and are usually considered highly reliable. Their administrative distance is often set to 1.
+Enhanced Interior Gateway Routing Protocol (EIGRP) (90):  	It is considered more trustworthy than many other dynamic routing protocols, so its administrative distance is set to 90 by default.
+Open Shortest Path First (OSPF) (110)	OSPF is a link-state routing protocol, and its administrative distance is set to 110.
+Routing Information Protocol (RIP) (120)	RIP is a distance-vector routing protocol, and its administrative distance is set to 120.
+
+Border Gateway Protocol (BGP) (200)	BGP is used for routing between different autonomous systems on the internet. It has an administrative distance of 200, making it less preferred than most interior routing protocols.
+Unknown or Unreachable (255)	If a route is unreachable or considered invalid for any reason, it is assigned an administrative distance of 255, indicating that it should not be used.
+
+
+Traffic  shaping is a network a management technique  used to control the flow of network traffic and optimize the use of available bandwidth 
